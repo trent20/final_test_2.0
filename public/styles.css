@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color:honeydew;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.greeting h1 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links button {
+  background-color:lightgrey;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: black;
+}
+
+.links b {
+  font-size: 40px;
+  grid-area: name;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-start;
+  height: 50px;
+  background-color: royalblue;
+}
+
+.messages:nth-child(odd) {
+  background-color:lightsteelblue
+}
+
+.someText {
+  grid-area: text;
+}
+.messages{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40px 500px 200px 200px 100px auto;
+  grid-template-rows: 50px;
+  grid-template-areas: "name text text text tick likes";
+}
+
+.tick {
+  font-size: 20px;
+  align-self: flex-end;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.messageCont {
+  display: flex;
+  flex-direction: column;
+  border: lightseagreen 1px solid;
+  width: 900px;
+}
+
+.likes{
+  grid-area: likes;
+}
+
+input {
+  margin: 10px;
+}
+
+#message {
+  height: 100px;
+  width: 200px;
+}
